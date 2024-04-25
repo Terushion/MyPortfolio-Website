@@ -2,6 +2,7 @@
 
 """
 # Attributes
+has_been_read: Whether an email has already been read.
 email address - anything, e.g. example@example.co.uk
 subject line - Heading for an email, usually mentioning what email content will include
 email content - content of an email 
@@ -9,24 +10,30 @@ email content - content of an email
 
 """
 # Methods
-mark as read - determines whether an email has been read or not,
+mark as read - Marks an Email as read.
+has_been_read = False
+def __init__(self, email_address):
+    Creates an Email object with the given properties.
+Args:
+email_address(str): This email's address.
+
 """
 
 class Email:
 
     """
-        This Python class initializes an email object with specified attributes and includes methods for
-        reading an email, marking emails as read, 
-        
-        :param email_address: This parameter in the `__init__` method of your class will represent the email address
-        from a sender that sent an email to the user. 
-        
-        :param subject_line: Represents the subject line of the email that was 'sent' to the user.
-        
-        :param email_content: The parameter 'email_content' in the `__init__` method of the class will represent 
-        the actual content of an email sent to the user. This will obviously differ from other emails and thus 
-        imitating the real world email interface.
+        This program implements a simple Email simulator. 
+        Classes:
+        - Email: Stores email information.
+
+        Functions:
+        - populate_inbox: Adds example emails to the global `inbox` list.
+
+        class Email:
+        Represents an Email.
+
         """
+
     # Creating the class, constructor and methods to create a new Email object.
     # Declared the class variable, with default value, for emails. 
     # Initialised the instance variables for emails.
@@ -35,10 +42,14 @@ class Email:
         self.subject_line = subject_line
         self.email_content = email_content
         self.has_been_read = False
+
     
+
     # Created the method to change 'has_been_read' emails from False to True.
     def mark_as_read(self):
         self.has_been_read = True
+
+
 
 # Initialised an empty list to store the email objects.
 inbox = []
@@ -57,6 +68,7 @@ def populate_inbox():
     inbox.append(second_email)
     inbox.append(third_email)
 
+
 # Create a function which prints the email’s subject_line, along with a corresponding number.
 def list_emails():
     print("\nInbox:")
@@ -66,6 +78,7 @@ def list_emails():
         # as opposed to a singular one e.g. first_email.subject_line
         # variable name 'subject' in for has to be same as one before
         # .subject_line
+
 
 # Create a function which displays a selected email. 
     # Once displayed, call the class method to set its 'has_been_read' variable to True.    
@@ -87,6 +100,7 @@ def read_email(index):
         print(f"\nEmail {email_object.email_address} has been read")
     else:
         print("Invalid input")
+
 
 # --- Email Program --- #
 # Call the function to populate the Inbox for further use in your program.
