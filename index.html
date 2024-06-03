@@ -2,18 +2,25 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <!-- Link to main CSS file -->
     <link rel="stylesheet" href="style.css">
+    <!-- Link to CSS file for media queries -->
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
+    <!-- Desktop navigation bar -->
     <nav id="desktop-nav">
+        <!-- Logo displayed on desktop view -->
         <div class="logo">Terrain Gray</div>
         <div>
+            <!-- Navigation links displayed horizontally on desktop -->
             <ul class="nav-links">
+                <!-- Individual navigation links -->
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -21,15 +28,20 @@
             </ul>
         </div>
     </nav>
+    <!-- Hamburger menu navigation bar (for mobile view) -->
     <nav id="hamburger-nav">
+        <!-- Logo displayed on mobile view -->
         <div class="logo">Terrain Gray</div>
         <div class="hamburger-menu">
+            <!-- Hamburger icon used to toggle mobile menu -->
             <div class="hamburger-icon" onclick="toggleMenu()">
+                <!-- Three horizontal lines representing the icon -->
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <div class="menu-links">
+                <!-- Navigation links displayed vertically on mobile -->
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -37,42 +49,61 @@
             </div>
         </div>
     </nav>
+    <!-- Profile section -->
     <section id="profile">
         <div class="section__pic-container">
+            <!-- Profile picture -->
             <img src="./images/profile-pic 2.jpg" alt="Terran Gray profile profile" class="profile-picture">
         </div>
         <div class="section__text">
+            <!-- Introduction text -->
             <p class="section__text__p1">Hello, I'm</p>
+            <!-- Name of the individual -->
             <h1 class="title">Terrain Gray</h1>
+            <!-- Description or profession of the individual -->
             <p class="section__text__p2">Software Development/Engineering Student</p>
+            <!-- Buttons for actions like downloading CV or viewing contact info -->
             <div class="btn-container">
+                <!-- Button to download CV -->
                 <button class="btn btn-color-2" onclick="window.open('./assets/Terrain G (Swe).pdf')">Download
                     CV</button>
+                    <!-- Button to view contact info -->
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact
                     Info</button>
             </div>
+            <!-- Container for social media icons -->
             <div id="socials-container">
+                <!-- LinkedIn icon linking to the individual's profile -->
                 <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon"
                     onclick="location.href='https://www.linkedin.com/in/terrain-gray-430013189'">
+                    <!-- GitHub icon linking to the individual's profile -->
                 <img src="./assets/github.png" alt="My Github Profile" class="icon"
                     onclick="location.href='https://github.com/Terushion'">
             </div>
         </div>
     </section>
     <section id="about">
+        <!-- Section title -->
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
+            <!-- Container for profile picture and details -->
             <div class="section__pic-container">
                 <img src="./images/profile-pic 3.jpg" alt="Profile picture" class="about-pic">
             </div>
+            <!-- Container for text and additional details -->
             <div class="about-details-container">
+                <!-- Sub-containers for different sections -->
                 <div class="about-containers">
+                    <!-- Container for experience details -->
                     <div class="details-container">
+                        <!-- Icon for experience -->
                         <img src="./assets/experience.png" alt="Experience icon" class="icon">
                         <h3>Experience</h3>
+                        <!-- Subtitle for experience section -->
                         <p>6 Months <br>Software Development</p>
                     </div>
+                    <!-- Container for education details -->
                     <div class="details-container">
                         <img src="./assets/education.png" alt="Education icon" class="icon">
                         <h3>Education</h3>
@@ -80,7 +111,9 @@
                             University of Nottingham<br>BEng Bachelors Dgree</p>
                     </div>
                 </div>
+                <!-- Container for additional text -->
                 <div class="text-container">
+                    <!-- Additional details about the individual -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate itaque consequuntur beatae
                         impedit facere fuga, minima, molestias libero laborum accusantium nobis sit. Rem et sint
                         aspernatur aut aliquid nobis nulla amet eaque, adipisci beatae quos reiciendis inventore nemo
@@ -88,15 +121,20 @@
                 </div>
             </div>
         </div>
+        <!-- Arrow icon to navigate to experience section -->
         <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'">
     </section>
+
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
+            <!-- Container for experience details -->
             <div class="about-containers">
+                <!-- Container for frontend development details -->
                 <div class="details-container">
                     <h2 class="experience-sub-title">Frontend Development</h2>
+                    <!-- Container for individual experience items -->
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
@@ -135,6 +173,7 @@
                         </article>
                     </div>
                 </div>
+                <!-- Container for backend development details -->
                 <div class="details-container">
                     <h2 class="experience-sub-title">Backend Development</h2>
                     <div class="article-container">
@@ -183,8 +222,11 @@
         <p class="section__text__p1">Browse My Receent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
+            <!-- Container for project details -->
             <div class="about-containers">
+                <!-- Container for individual project -->
                 <div class="details-container color-container">
+                    <!-- Container for project image -->
                     <div class="article-container">
                         <img src="./assets/project-1.png" alt="Project 1" class="project-img">
                     </div>
